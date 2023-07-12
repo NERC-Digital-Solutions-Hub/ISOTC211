@@ -50,4 +50,4 @@ __pycache__
 
 # ignore for security reasons
 /Hub/DotNet/Proj/src/**/appsettings.json
-!/Hub/DotNet/Out/**/application-configuration-template.json
+!/Hub/DotNet/Out/NDSH.Utilities.App/application-configuration-template.json
