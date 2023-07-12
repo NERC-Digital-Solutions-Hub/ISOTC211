@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "NDSH.Geospatial.Metadata.Utilities": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "pgSqlPath": "\"Host=ndsh-pgsql-dev.c8f5ma9ucjrr.eu-west-2.rds.amazonaws.com;Database=ndsh-pgsql-dev;Username=ndsh_dev;Password=ndshpassword\""
+      }
+    }
+  }
+}

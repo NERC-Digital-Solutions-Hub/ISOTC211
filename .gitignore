@@ -1,0 +1,53 @@
+
+# ================================================================================
+# How-To
+# --------------------------------------------------------------------------------
+# /folder      - Ignore this folder.
+# /file        - Ignore this file.
+# /file.ext    - Ignore this file.
+# /*.ext       - Ignore everything(1) with the specified extension (.ext).
+#
+# /folder/*    - Ignore everything(1).
+# /folder/*/   - Ignore only the subfolders.
+#
+# Use the following two lines to ignore all the files in the folder,
+# but not its subolders.
+# /folder/*
+# !*/
+# --------------------------------------------------------------------------------
+# Notes:
+# (1) everything: files and folders.
+# --------------------------------------------------------------------------------
+# References:
+# https://stackoverflow.com/questions/2545602/how-to-git-ignore-subfolders-subdirectories
+# https://stackoverflow.com/questions/35030403/git-ignore-subfolders-but-not-the-files-in-a-folder
+# https://stackoverflow.com/questions/18930103/git-ignore-everything-in-a-directory-except-subfolders
+# ================================================================================
+
+# General rules
+.vs
+.vscode
+.backups
+.pytest*
+__pycache__
+*.pyHistory
+*.png~
+*.zip
+
+/**/*.csproj.user
+/**/*.gdb
+/**/GpMessages
+/**/ImportLog
+
+# Hub
+# ignore generated files/folders
+/Hub/DotNet/Proj/src/**/obj
+/Hub/DotNet/Bin
+/Hub/DotNet/Doc
+/Hub/DotNet/Out
+
+
+
+# ignore for security reasons
+/Hub/DotNet/Proj/src/**/appsettings.json
+!/Hub/DotNet/Out/**/application-configuration-template.json
